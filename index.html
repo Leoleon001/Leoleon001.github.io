@@ -29,12 +29,22 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        .espacio {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         h1 {
             margin: 0;
         }
         footer {
             text-align: center;
-            padding: 50px;
+            padding: 10px;
             background: #35424a;
             color: #fff;
             position: fixed;
@@ -45,6 +55,75 @@
             color: #4CAF50;
             font-weight: bold;
         }
+        .half-circle {
+            width: 200px;
+            height: 100px; /* as the half of the width */
+            background-color: red;
+            border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+            border-top-right-radius: 110px; /* 100px of height + 10px of border */
+            border-bottom: 0;
+        }
+        .body{
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+        .leg{
+            width: 50px;
+            height: 70px;
+            background-color: red;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .leg_white{
+            width: 50px;
+            height: 70px;
+            background-color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .leg_2{
+            width: 50px;
+            height: 70px;
+            background-color: red;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            justify-self: end;
+        }
+        .white_square{
+            width: 200px;
+            height: 70px;
+            background-color: white;
+        }
+        .box{
+            display:flex;
+        }
+        .visor{
+            width :150px;
+            height : 75px;
+            background-color: aqua;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;    
+            border-bottom-right-radius: 20px;
+            top:40%;
+            left:30%;
+            position: relative;
+            margin: -100px,0px,0px,-50px;
+        }
+        .rotated-half-circle {
+            /* Create the circle */
+            width: 40px;
+            height: 40px;
+            border: 10px solid black;
+            border-radius: 50%;
+            /* Halve the circle */
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            /* Rotate the circle */
+            transform: rotate(-45deg);
+        }
+        
     </style>
 </head>
 <body>
@@ -78,11 +157,23 @@
         </div>
     </div>
     
+    <div class="half-circle">
+        <div class="visor"></div>
+    </div>
+    <div class="body"></div>
+    <div class="box">
+        <div class="leg"></div>
+        <div class="leg_white"></div>
+        <div class="leg_white"></div>
+        <div class="leg_2"></div>
+    </div>
+
+    <div class="espacio">
+        <h3>Hola, soy un espacio</h3>
+    </div>
     <script src="assets/js/script.js"></script>
-    
     <footer>
         <p>Página de prueba &copy; 2025</p>
     </footer>
-    
 </body>
 </html>
